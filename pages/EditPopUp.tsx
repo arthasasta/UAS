@@ -16,7 +16,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
             id="nim"
             name="nim"
             defaultValue={editData.nim}
-            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
             placeholder="Insert Code Of jual"
             disabled
           />
@@ -34,7 +34,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
             defaultValue={editData.tanggal_lahir}
             min="1970-01-01"
             max="2025-12-31"
-            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
             placeholder="Insert Name jual"
           />
         </div>
@@ -50,7 +50,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
             id="nama"
             name="nama"
             defaultValue={editData.nama}
-            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
             placeholder="Placeholder Text"
           />
         </div>
@@ -65,7 +65,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
             type="file"
             name="image"
             disabled
-            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
           />
         </div>
         <div className="w-full flex flex-col mb-2 px-2">
@@ -79,7 +79,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
             id="address"
             name="alamat"
             defaultValue={editData.alamat}
-            className="border border-gray-300 rounded-md py-2 px-3 h-32 resize-none focus:outline-none focus:ring-1 focus:ring-orange-500"
+            className="border border-gray-300 rounded-md py-2 px-3 h-32 resize-none focus:outline-none focus:ring-1 focus:ring-black"
             placeholder="Insert Description"
           ></textarea>
         </div>
@@ -94,7 +94,7 @@ const EditPopUp = ({ editData, handleSubmitEdit, onClose }) => {
         </button>
         <button
           type="submit"
-          className="inline-flex justify-center rounded-md bg-orange-500 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:outline-none sm:ml-3 sm:w-auto"
+          className="inline-flex justify-center rounded-md bg-black px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zinc-600 focus:ring-2 focus:ring-black focus:outline-none sm:ml-3 sm:w-auto"
         >
           Save
         </button>

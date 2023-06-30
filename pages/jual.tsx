@@ -254,7 +254,7 @@ const Produk = () => {
       </Modal>
       {/* DELETE */}
       <Modal
-        title="Delete Data"
+        title="Hapus Produk"
         open={showDeleteModal}
         onClose={() => {
           setShowDeleteModal(false);
