@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import Image from 'next/image';
-import koneksiDepsFood from './api/api';
+import koneksitoko from './api/api';
 import Navbar from './Navbar';
 import Footer from './Footer';
 // import Produk from 'assets/icons/Produk.png';
@@ -47,7 +47,7 @@ const Produk = () => {
       alamat: event.target.alamat.value,
       tanggal_lahir: event.target.tanggal_lahir.value,
     };
-    koneksiDepsFood
+    koneksitoko
       .put(address, formData)
       .then((res) => {
         console.log(res);
@@ -78,7 +78,7 @@ const Produk = () => {
   useEffect(() => {
     async function getProdukData() {
       try {
-        const response = await koneksiDepsFood.get('/');
+        const response = await koneksitoko.get('/');
         setProdukData(response.data.data);
       } catch (error) {
         alert('error from mahasiswa in api mahasiswa: ' + error);
@@ -88,7 +88,7 @@ const Produk = () => {
   }, []);
 
   const handleSubmitAdd = (formData) => {
-    koneksiDepsFood
+    koneksitoko
       .post('/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
@@ -106,7 +106,7 @@ const Produk = () => {
 
   const handleDelete = () => {
     if (deleteNim) {
-      koneksiDepsFood
+      koneksitoko
         .delete(`/${deleteNim}`)
         .then((response) => {
           console.log('Data berhasil dihapus:', response.data);

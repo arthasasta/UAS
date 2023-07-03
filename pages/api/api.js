@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const koneksiDepsFood = axios.create({
+const koneksitoko = axios.create({
   baseURL: 'http://127.0.0.1:5000/api/mahasiswa',
 });
 
-export default koneksiDepsFood;
+export default koneksitoko;

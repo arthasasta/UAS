@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import koneksiDepsFood from '../api/api';
+import koneksitoko from '../api/api';
 import fireIcon from 'assets/icons/fire.png';
 import TextTruncate from '../TextTruncate';
 
@@ -11,7 +11,7 @@ const Menus = () => {
   useEffect(() => {
     async function getMenusData() {
       try {
-        const response = await koneksiDepsFood.get('/');
+        const response = await koneksitoko.get('/');
         setMenusData(response.data.data);
       } catch (error) {
         alert('error from mahasiswa in api mahasiswa: ' + error);
