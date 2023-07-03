@@ -15,14 +15,14 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
             htmlFor="code"
             className="text-sm font-medium text-zinc-700 mb-1"
           >
-            Code :
+            Kode :
           </label>
           <input
             type="text"
             id="nim"
             name="nim"
             className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
-            placeholder="Insert Code Of jual"
+            placeholder="Masukan Kode Penjualan"
           />
         </div>
         <div className="w-1/2 flex flex-col mb-2 px-2">
@@ -30,7 +30,7 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
             htmlFor="date"
             className="text-sm font-medium text-zinc-700 mb-1"
           >
-            Date :
+            Tanggal :
           </label>
           <input
             type="date"
@@ -46,14 +46,14 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
             htmlFor="name"
             className="text-sm font-medium text-zinc-700 mb-1"
           >
-            Name :
+            Nama :
           </label>
           <input
             type="text"
             id="nama"
             name="nama"
             className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-1 focus:ring-black"
-            placeholder="Insert Name Your Food"
+            placeholder="Masukan Nama Barang"
           />
         </div>
         <div className="w-1/2 flex flex-col mb-2 px-2">
@@ -61,7 +61,7 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
             htmlFor="image"
             className="text-sm font-medium text-zinc-700 mb-1"
           >
-            Image :
+            Gambar :
           </label>
           <input
             type="file"
@@ -74,13 +74,13 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
             htmlFor="description"
             className="text-sm font-medium text-zinc-700 mb-1"
           >
-            Description :
+            Deskripsi :
           </label>
           <textarea
             id="address"
             name="alamat"
             className="border border-gray-300 rounded-md py-2 px-3 h-32 resize-none focus:outline-none focus:ring-1 focus:ring-black"
-            placeholder="Insert Description"
+            placeholder="Masukan Deskripsi Penjualan"
           ></textarea>
         </div>
       </div>
@@ -90,13 +90,13 @@ const AddPopUp = ({ handleSubmitAdd, onClose }) => {
           className="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-zinc shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
           onClick={onClose}
         >
-          Cancel
+          Batal
         </button>
         <button
           type="submit"
           className="inline-flex justify-center rounded-md bg-black px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-zinc-600 focus:ring-2 focus:ring-black focus:outline-none sm:ml-3 sm:w-auto"
         >
-          Save
+          Simpan
         </button>
       </div>
     </form>

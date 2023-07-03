@@ -231,7 +231,7 @@ const Produk = () => {
       <Footer />
       {/* ADD */}
       <Modal
-        title="New Produk"
+        title="Barang Baru"
         open={showAddModal}
         onClose={() => setShowAddModal(false)}
       >
