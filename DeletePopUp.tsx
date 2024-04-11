@@ -1,6 +1,11 @@
 import React from 'react';
 
-const DeletePopUp = ({ handleDelete, onClose }) => {
+interface DeletePopUpProps {
+  handleDelete: (arg: boolean) => void;
+  onClose: () => void;
+}
+
+const DeletePopUp: React.FC<DeletePopUpProps> = ({ handleDelete, onClose }) => {
   return (
     <div className="flex flex-col px-6">
       <div className="py-4">
