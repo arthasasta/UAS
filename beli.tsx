@@ -6,8 +6,16 @@ import fireIcon from 'assets/icons/fire.png';
 import Footer from './Footer';
 import TextTruncate from './TextTruncate';
 
+interface MenuItem {
+  nim: string;
+  foto: string;
+  nama: string;
+  alamat: string;
+  // add other properties as needed
+}
+
 const Menu = () => {
-  const [menuData, setMenuData] = useState(null);
+  const [menuData, setMenuData] = useState<MenuItem[] | null>(null);
 
   useEffect(() => {
     async function getMenuData() {
@@ -30,10 +38,10 @@ const Menu = () => {
       <Navbar />
       <div className="max-w-screen-xl mx-auto py-8">
         <div className="flex px-4">
-        <div className="text-4xl font-bold text-zinc-700 text-center">Sneakers</div>
+          <div className="text-4xl font-bold text-zinc-700 text-center">Sneakers</div>
         </div>
         <div className="flex flex-wrap py-6">
-          {menuData.map((menuItem) => (
+          {menuData.map((menuItem: MenuItem) => (
             <div
               key={menuItem.nim}
               className="w-full lg:w-1/5 px-4 py-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
